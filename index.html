@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=index.css>
+    <title>StopWatch</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="display">
+            00:00:00
+        </div>
+    </div>
+    <div class="buttons">
+        <button onclick="startStop()" id class="start-stop" type="button">
+            <img id="start" src="img/play.png" alt="play" width="70px" height="70px" onclick="document.getElementById('pause').src = 'img/pause.png'">
+            <img id="pause" src="img/pause.png" alt="play" width="70px" height="70px">
+        </button>
+        <button onclick="reset()" class="reset" type="button"><img src="img/stop.png" alt="stop" width="70px" height="70px"></button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
