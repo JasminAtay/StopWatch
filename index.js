@@ -57,10 +57,12 @@ function startStop(){
 
         interval = window.setInterval(stopWatch,10);
         document.getElementsByClassName("start-stop").innerHTML = "Stop";
+        document.getElementById("start").src = "img/pause.png";
         status = "started";
     }else {
         window.clearInterval(interval);
         document.getElementsByClassName("start-stop").innerHTML = "Start";
+        document.getElementById("start").src = "img/play.png";
         status = "stopped";
     }
 
