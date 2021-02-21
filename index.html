@@ -15,13 +15,25 @@
         </div>
     </div>
     <div class="buttons">
-        <button onclick="startStop()" id class="start-stop" type="button">
-            <img id="start" src="img/play.png" alt="play" width="70px" height="70px" >
+        <button onclick="startStop()" class="timerButton" id="start-stop" type="button">
+            <img id="start" src="img/play.png" alt="play" width="70px" height="70px">
         </button>
-        <button onclick="reset()" class="reset" type="button"><img src="img/stop.png" alt="stop" width="70px" height="70px"></button>
+        <button onclick="reset()" class="timerButton" id="reset" type="button">
+            <img src="img/stop.png" alt="stop" width="70px" height="70px">
+        </button>
+        <button onclick="lap()" class="timerButton" id="lap" type="button">
+            <img src="img/replay.png" alt="reload" width="70px" height="70px">
+        </button>
     </div>
 
+    <div class="result-continer">
+        <ul id="results" style="display:none"> Results
+
+        </ul>
+    </div>
     <script src="index.js"></script>
+
+
 </body>
 
 </html>
